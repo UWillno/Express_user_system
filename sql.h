@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QSqlTableModel>
 
 class Sql : public QObject
 {
@@ -15,11 +16,26 @@ public:
 
     bool signUp(const QStringList &list);
 
-signals:
+    bool login(const QString& user,const QString &pwd);
 
+    void selectWD();
+
+    bool addDelivery(const QStringList &list);
+
+    void selectDelivery(const qint64 &id);
+
+    bool beVip();
+
+    void selectNews();
+
+    QSqlTableModel *model;
+    QSqlQueryModel *model1;
+signals:
+    void selectDeliveryS(QVariantList list);
 
 private:
     QSqlDatabase m_db;
+
 };
 
 #endif // SQL_H

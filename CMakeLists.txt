@@ -28,6 +28,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         signupdialog.h signupdialog.cpp signupdialog.ui
         singleton.h
         settings.h settings.cpp
+        logindialog.h logindialog.cpp logindialog.ui
+        deliverydialog.h deliverydialog.cpp deliverydialog.ui
+        newsdialog.h newsdialog.cpp newsdialog.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Express_user_system APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

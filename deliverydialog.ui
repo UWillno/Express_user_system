@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>SignUpDialog</class>
- <widget class="QDialog" name="SignUpDialog">
+ <class>DeliveryDialog</class>
+ <widget class="QDialog" name="DeliveryDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>265</width>
+    <height>204</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,17 +19,14 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>手机号</string>
+        <string>快件状态：</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_user">
-       <property name="inputMask">
+      <widget class="QLabel" name="label_state">
+       <property name="text">
         <string/>
-       </property>
-       <property name="maxLength">
-        <number>11</number>
        </property>
       </widget>
      </item>
@@ -40,14 +37,32 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>用户名</string>
+        <string>提交时间：</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_username">
-       <property name="maxLength">
-        <number>20</number>
+      <widget class="QLabel" name="label_commit">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>发货时间：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_sign">
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </item>
@@ -58,17 +73,32 @@
      <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>密码</string>
+        <string>入站时间：</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_password">
-       <property name="maxLength">
-        <number>30</number>
+      <widget class="QLabel" name="label_arrival">
+       <property name="text">
+        <string/>
        </property>
-       <property name="echoMode">
-        <enum>QLineEdit::Password</enum>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>签收时间：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_receipt">
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </item>
@@ -80,7 +110,7 @@
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <set>QDialogButtonBox::Ok</set>
      </property>
     </widget>
    </item>
@@ -91,7 +121,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>SignUpDialog</receiver>
+   <receiver>DeliveryDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -107,7 +137,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>SignUpDialog</receiver>
+   <receiver>DeliveryDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

@@ -1,10 +1,13 @@
 #include "mainwindow.h"
 
 #include <QApplication>
-
+#include "singleton.h"
+#include "settings.h"
+#define ss Singleton<Settings>::GetInstance()
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    ss;
     MainWindow w;
     w.show();
     return a.exec();

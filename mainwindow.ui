@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>421</width>
+    <width>466</width>
     <height>423</height>
    </rect>
   </property>
@@ -28,7 +28,7 @@ QTabBar::tab{height:40}</string>
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -43,154 +43,166 @@ QTabBar::tab{height:40}</string>
        <attribute name="title">
         <string>寄件</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_4">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>寄件人信息</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_3">
+           <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
-             <widget class="QLabel" name="label">
+             <widget class="QLabel" name="label_2">
               <property name="text">
-               <string>寄件人信息</string>
+               <string>姓名：</string>
               </property>
              </widget>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_11">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout">
-                <item>
-                 <widget class="QLabel" name="label_2">
-                  <property name="text">
-                   <string>姓名：</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="lineEdit_send_name"/>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <item>
-                 <widget class="QLabel" name="label_4">
-                  <property name="text">
-                   <string>电话：</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="lineEdit_send_tel"/>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_2">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_5">
-                <item>
-                 <widget class="QLabel" name="label_6">
-                  <property name="text">
-                   <string>所属区域：</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="lineEdit_send_area"/>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_8">
-                <item>
-                 <widget class="QLabel" name="label_10">
-                  <property name="text">
-                   <string>详细地址：</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="lineEdit_send_address"/>
-                </item>
-               </layout>
-              </item>
-             </layout>
+             <widget class="QLineEdit" name="lineEdit_send_name"/>
             </item>
            </layout>
           </item>
           <item>
-           <widget class="QLabel" name="label_3">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>电话：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_send_tel"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_6">
             <property name="text">
-             <string>收件人信息</string>
+             <string>所属区域：</string>
             </property>
            </widget>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <widget class="QComboBox" name="comboBox_cf_2">
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_2">
-              <item>
-               <widget class="QLabel" name="label_5">
-                <property name="text">
-                 <string>姓名：</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit_hav_name"/>
-              </item>
-             </layout>
+             <property name="text">
+              <string>中国</string>
+             </property>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_4">
-              <item>
-               <widget class="QLabel" name="label_7">
-                <property name="text">
-                 <string>电话：</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit_hav_tel"/>
-              </item>
-             </layout>
+             <property name="text">
+              <string>外国</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_send_area"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>详细地址：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_send_address"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>收件人信息</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>姓名：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_hav_name"/>
             </item>
            </layout>
           </item>
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_5">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_6">
-              <item>
-               <widget class="QLabel" name="label_8">
-                <property name="text">
-                 <string>所属区域：</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit_hav_area"/>
-              </item>
-             </layout>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>电话：</string>
+              </property>
+             </widget>
             </item>
             <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_13">
-              <item>
-               <widget class="QLabel" name="label_13">
-                <property name="text">
-                 <string>详细地址：</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="lineEdit_hav_address"/>
-              </item>
-             </layout>
+             <widget class="QLineEdit" name="lineEdit_hav_tel"/>
             </item>
            </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>所属区域：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_cf_3">
+            <item>
+             <property name="text">
+              <string>中国</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>外国</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_hav_area"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>详细地址：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_hav_address"/>
           </item>
          </layout>
         </item>
@@ -246,14 +258,25 @@ QTabBar::tab{height:40}</string>
              </widget>
             </item>
             <item>
-             <widget class="QDoubleSpinBox" name="doubleSpinBox_weight"/>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_weight">
+              <property name="minimum">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
           <item>
-           <widget class="QLabel" name="label_price">
+           <widget class="QLabel" name="label_19">
             <property name="text">
              <string>价格：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_price">
+            <property name="text">
+             <string/>
             </property>
            </widget>
           </item>
@@ -283,7 +306,7 @@ QTabBar::tab{height:40}</string>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_19">
+           <widget class="QLabel" name="label_yf">
             <property name="text">
              <string>价格：</string>
             </property>
@@ -303,7 +326,18 @@ QTabBar::tab{height:40}</string>
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="comboBox_2"/>
+             <widget class="QComboBox" name="comboBox_cf">
+              <item>
+               <property name="text">
+                <string>中国</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>外国</string>
+               </property>
+              </item>
+             </widget>
             </item>
            </layout>
           </item>
@@ -317,7 +351,32 @@ QTabBar::tab{height:40}</string>
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="comboBox_3"/>
+             <widget class="QComboBox" name="comboBox_md">
+              <item>
+               <property name="text">
+                <string>中国</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>外国</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>重量/KG</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox">
+              <property name="minimum">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -340,7 +399,7 @@ QTabBar::tab{height:40}</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_10"/>
+           <widget class="QLineEdit" name="lineEdit_wdcx"/>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_checkOutlets">
@@ -361,7 +420,7 @@ QTabBar::tab{height:40}</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_7"/>
+           <widget class="QLineEdit" name="lineEdit_ydcx"/>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_checkBill">
@@ -373,7 +432,11 @@ QTabBar::tab{height:40}</string>
          </layout>
         </item>
         <item>
-         <widget class="QTableWidget" name="tableWidget"/>
+         <widget class="QTableView" name="tableView">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -383,7 +446,11 @@ QTabBar::tab{height:40}</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_8">
         <item>
-         <widget class="QListWidget" name="listWidget"/>
+         <widget class="QListView" name="listView">
+          <property name="modelColumn">
+           <number>0</number>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -408,17 +475,18 @@ QTabBar::tab{height:40}</string>
               <item>
                <widget class="QLabel" name="label_21">
                 <property name="text">
-                 <string>姓名：</string>
+                 <string>手机号：</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_11"/>
+               <widget class="QLabel" name="label_user">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
               </item>
              </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_22"/>
             </item>
            </layout>
           </item>
@@ -434,9 +502,9 @@ QTabBar::tab{height:40}</string>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_23">
+           <widget class="QLabel" name="label_username">
             <property name="text">
-             <string>asaaddasda</string>
+             <string/>
             </property>
            </widget>
           </item>
@@ -452,9 +520,9 @@ QTabBar::tab{height:40}</string>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_24">
+           <widget class="QLabel" name="label_isVip">
             <property name="text">
-             <string>asaaddasda</string>
+             <string/>
             </property>
            </widget>
           </item>
@@ -464,8 +532,14 @@ QTabBar::tab{height:40}</string>
          <layout class="QHBoxLayout" name="horizontalLayout_25">
           <item>
            <widget class="QPushButton" name="pushButton_changepwd">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="text">
              <string>修改密码</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
             </property>
            </widget>
           </item>
@@ -473,13 +547,6 @@ QTabBar::tab{height:40}</string>
            <widget class="QPushButton" name="pushButton_login">
             <property name="text">
              <string>登录</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_logout">
-            <property name="text">
-             <string>登出</string>
             </property>
            </widget>
           </item>
@@ -510,7 +577,7 @@ QTabBar::tab{height:40}</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>421</width>
+     <width>466</width>
      <height>21</height>
     </rect>
    </property>

@@ -27,11 +27,11 @@ void SignUpDialog::on_buttonBox_accepted()
     bool result = QtConcurrent::run([&]{ return SQL.signUp(list);}).result();
     QMessageBox msgBox;
     if(result){
-        msgBox.setText("fffffffffffffff.");
+        msgBox.setText("注册成功.");
         msgBox.exec();
         close();
     }else{
-        msgBox.setText("asdasdasd.");
+        msgBox.setText("注册失败.");
         msgBox.exec();
     }
 }

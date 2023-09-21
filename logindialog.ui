@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>SignUpDialog</class>
- <widget class="QDialog" name="SignUpDialog">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -19,15 +19,12 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>手机号</string>
+        <string>手机号：</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLineEdit" name="lineEdit_user">
-       <property name="inputMask">
-        <string/>
-       </property>
        <property name="maxLength">
         <number>11</number>
        </property>
@@ -40,30 +37,12 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>用户名</string>
+        <string>密码：</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_username">
-       <property name="maxLength">
-        <number>20</number>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>密码</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_password">
+      <widget class="QLineEdit" name="lineEdit_pwd">
        <property name="maxLength">
         <number>30</number>
        </property>
@@ -91,7 +70,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>SignUpDialog</receiver>
+   <receiver>LoginDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -107,7 +86,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>SignUpDialog</receiver>
+   <receiver>LoginDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

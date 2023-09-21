@@ -24,9 +24,6 @@ private slots:
 private:
     Ui::SignUpDialog *ui;
 
-    // QWidget interface
-protected:
-    void closeEvent(QCloseEvent *event);
 };
 
 #endif // SIGNUPDIALOG_H
